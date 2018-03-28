@@ -15,14 +15,14 @@ exports.run = (client, message, args) => {
         "milf",
         "creampie"
     ]
-    const Pornsearch = require('pornsearch').default.search(topics[Math.round(Math.random() * (topics.length - 1))]);
+    const Pornsearch = require('pornsearch').search(topics[Math.round(Math.random() * (topics.length - 1))]);
     
     Pornsearch.gifs(1)
     .then(gifs => {
         let gifrnd = gifs.map(gif => gif.url)
         if (message.mentions.users.first()) {
             let embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** fucked ${message.mentions.users.first().username}`)
+            .setTitle(`**${message.author.username}** Encule ${message.mentions.users.first().username}`)
             .setImage(gifrnd[Math.floor(Math.random() * gifrnd.length)])
             .setColor(0xFFA500)
             message.channel.send({
@@ -30,7 +30,7 @@ exports.run = (client, message, args) => {
             })
         } else {
             let embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** fucked **${client.user.username}**`)
+            .setTitle(`**${message.author.username}** Baisse **${client.user.username}**`)
             .setImage(gifrnd[Math.floor(Math.random() * gifrnd.length)])
             .setColor(0xFFA500)
             message.channel.send({
