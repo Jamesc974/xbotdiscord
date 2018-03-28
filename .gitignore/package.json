@@ -1,0 +1,21 @@
+{
+  "name": "Xbot",
+  "version": "1.0.0",
+  "description": "Bot créé par TarKyo",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TarKyo Dch",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "fs": "0.0.1-security",
+    "moment": "^2.21.0",
+    "moment-duration-format": "^2.2.2",
+    "pornsearch": "^2.4.2",
+    "random-puppy": "^1.1.0",
+    "snekfetch": "^3.6.4",
+    "superagent": "^3.8.2"
+  }
+}
