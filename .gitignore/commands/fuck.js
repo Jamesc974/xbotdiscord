@@ -22,7 +22,7 @@ exports.run = (client, message, args) => {
         let gifrnd = gifs.map(gif => gif.url)
         if (message.mentions.users.first()) {
             let embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** Encule ${message.mentions.users.first().username}`)
+            .setTitle(`:point_right: :ok_hand: **${message.author.username}** fait l'amour à ${message.mentions.users.first().username}`)
             .setImage(gifrnd[Math.floor(Math.random() * gifrnd.length)])
             .setColor(0xFFA500)
             message.channel.send({
@@ -30,7 +30,7 @@ exports.run = (client, message, args) => {
             })
         } else {
             let embed = new Discord.RichEmbed()
-            .setTitle(`**${message.author.username}** Baisse **${client.user.username}**`)
+            .setTitle(`:point_right: :ok_hand: **${message.author.username}** fait l'amour à **${client.user.username}**`)
             .setImage(gifrnd[Math.floor(Math.random() * gifrnd.length)])
             .setColor(0xFFA500)
             message.channel.send({
