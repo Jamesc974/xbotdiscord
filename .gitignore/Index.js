@@ -3,8 +3,8 @@ const client = new Discord.Client();
 var request = require("superagent");
 
 //----------------------------------------------
-var token = "NDI4NTEzODQ5MzI3NzQ3MDc0.DZ0MJA.VZAF1RkjBNWtUaox9fl9rvl0nlw"
-var prefix = "^^"
+var token = (process.env.TOKEN)
+var prefix = (process.env.PREFIX)
 //----------------------------------------------
 
 client.on("ready", async () => {
