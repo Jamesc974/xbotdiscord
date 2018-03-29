@@ -1,3 +1,5 @@
+const Discord = require ("discord.js");
+
 exports.run = (client, message, args) => {
     let iconm = message.author.avatarURL;
     let helpembed = new Discord.RichEmbed()
