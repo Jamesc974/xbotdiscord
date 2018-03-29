@@ -28,7 +28,7 @@ exports.run = (client, message, args) => {
     .setColor("#8904B1");
 
     try{
-        await message.author.send(helpembed);
+        message.author.send(helpembed);
         message.delete().catch(O_o=>{});
         message.channel.sendMessage(helpembed2).then(msg => msg.delete(5000));
     }catch(e){
