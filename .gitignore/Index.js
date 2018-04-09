@@ -29,4 +29,15 @@ client.on("message", message => {
     }
 });
 
+let options = ["pile", "face"];
+
+client.on('message', msg => {
+  if (msg.content === prefix + "flip") {
+
+    msg.delete().catch(O_o=>{});
+    msg.channel.sendMessage(`**${msg.author.username}**, Tu a fait **${options[Math.floor(Math.random() * options.length)]} **!`);
+    
+  }
+});
+
 client.login(token);
