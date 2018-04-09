@@ -40,4 +40,59 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === prefix+'roll'){
+    var randomnumber = Math.floor(Math.random() * 50) + 1
+    var randomnumber2 = Math.floor(Math.random() * 50) + 1
+    var randomnumber3 = Math.floor(Math.random() *50) +1 
+    if (randomnumber <25){
+      if (randomnumber2 <25){
+        if (randomnumber3 <25){
+            message.channel.send(':lemon:'+':lemon:'+':lemon:');
+            message.reply('Tu as Gagné !');
+            fs.writeFile('Gagnant.txt',message.author + 'as gagné', (err) => {
+              if (err) throw err;
+              console.log('un gagant en plus >> Enregistrement dans Gagant.txt');
+            });
+
+          }else{
+            message.channel.send(':lemon:'+':lemon:'+':strawberry:');
+            message.reply('Tu as perdu !');
+          }
+        }else{
+          if(randomnumber <25){
+            message.channel.send(':lemon:'+':strawberry:'+':lemon:');
+            message.reply('Tu as perdu !');
+          }else{
+            message.channel.send(':lemon:'+':strawberry:'+':strawberry:');
+            message.reply('Tu as perdu !');
+          }
+        }
+      }else{
+        if(randomnumber <25){
+          if(randomnumber2 <25){
+            message.channel.send(':strawberry:'+':lemon:'+':lemon:');
+            message.reply('Tu as perdu !');
+          }
+        }else{
+          if(randomnumber3 <25){
+              message.channel.send(':strawberry:'+':strawberry:'+':lemon:');
+              message.reply('Tu as perdu !');
+          }else{
+            message.channel.send(':strawberry:'+':strawberry:'+':strawberry:');
+            message.reply('Tu as Gagné bien joué');   
+            fs.writeFile('Gagant.txt',message.author + 'as gagné', (err) => {
+              if (err) throw err;
+              console.log('un gagant en plus >> Enregistrement dans Gagant.txt');
+            });
+  
+          }
+  
+        }
+  
+      }
+  
+    }
+});
+
 client.login(token);
