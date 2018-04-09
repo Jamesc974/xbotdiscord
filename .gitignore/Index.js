@@ -42,7 +42,7 @@ client.on('message', msg => {
 });
 
 client.on('message', message => {
-  if (message.content === prefix+'roll'){
+  if (message.content === prefix + "roll") {
     var randomnumber = Math.floor(Math.random() * 50) + 1
     var randomnumber2 = Math.floor(Math.random() * 50) + 1
     var randomnumber3 = Math.floor(Math.random() *50) +1 
