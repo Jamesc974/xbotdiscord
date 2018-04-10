@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 
 
-exports.run = async (client, msg) => {
+exports.run = (client, message) => {
 
   const duelhelp = new Discord.MessageEmbed()
 
