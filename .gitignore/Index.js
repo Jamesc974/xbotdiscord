@@ -96,7 +96,7 @@ client.on('message', message => {
     }
 });
 
-client.on async (client, msg) => {
+client.on(client, msg) => {
   if (message.content === prefix + "avatar") {
       const user = msg.mentions.users.first();
       if(!user) return msg.channel.send("❓Tu as mis son nom").then(msg => msg.delete(5000));
