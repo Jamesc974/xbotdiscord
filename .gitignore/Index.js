@@ -41,4 +41,11 @@ client.on('message', msg => {
   }
 });
 
+client.on("guildCreate", guild => {
+  console.log(`-------------------------------[ Nouveau serveur ]-------------------------------`);
+  console.log(`Le bot a rejoint le serveur ${guild.name}, createur: ${guild.owner.user.tag}`);
+  console.log(`----------------------------------------------------------------------------------`);
+
+});
+
 client.login(token);
