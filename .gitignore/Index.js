@@ -10,7 +10,7 @@ var prefix = (process.env.PREFIX)
 
 client.on("ready", async () => {
     console.log(`${client.user.username} est en ligne sur ${client.guilds.size} serveurs!`);
-    client.user.setPresence({ game: { name: `!cmd | sur ${client.guilds.size} serveur | by TarKyo`}})
+    client.user.setPresence({ game: { name: `xcmd | sur ${client.guilds.size} serveur | by TarKyo`}})
   
   });
 
