@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-exports.run = async (bot, msg) => {
+exports.run = async (client, msg) => {
   
       const user = msg.mentions.users.first();
       if(!user) return msg.channel.send("❓Tu as mis son nom").then(msg => msg.delete(5000));
