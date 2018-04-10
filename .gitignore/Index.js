@@ -97,7 +97,7 @@ client.on('message', message => {
 });
 
 client.on(client, msg) => {
-  if (message.content === prefix + "avatar") {
+  if (msg.content === prefix + "avatar") {
       const user = msg.mentions.users.first();
       if(!user) return msg.channel.send("❓Tu as mis son nom").then(msg => msg.delete(5000));
       if (!user.avatarURL) return msg.channel.send("Il n'a pas d'avatar").then(msg => msg.delete(5000));
