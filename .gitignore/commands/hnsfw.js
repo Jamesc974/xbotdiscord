@@ -11,6 +11,7 @@ exports.run = (client, message, args) => {
     .addField(" ▶️ Asiatique", "_asian")
     .addField(" ▶️ Ass/Cul", "_ass")
     .addField(" ▶️ Boobs", "_boobs")
+    .addField(" ▶️ Homosexuel", "_homo")
     .addField(" ▶️ Cosplay", "_cosplay")
     .addField(" ▶️ Gif", "_gif")
     .addField(" ▶️ Hentai", "_hentai")
