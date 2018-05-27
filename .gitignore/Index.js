@@ -4,7 +4,7 @@ const client = new Discord.Client();
 var request = require("superagent");
 
 //----------------------------------------------
-var token = (process.env.TOKEN)
+var token = (process.env.CLEF)
 var prefix = (process.env.PREFIX)
 //----------------------------------------------
 
