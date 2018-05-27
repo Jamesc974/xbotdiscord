@@ -4,13 +4,12 @@ const client = new Discord.Client();
 var request = require("superagent");
 
 //----------------------------------------------
-var token = (process.env.CLEF)
 var prefix = (process.env.PREFIX)
 //----------------------------------------------
 
 client.on("ready", async () => {
     console.log(`${client.user.username} est en ligne sur ${client.guilds.size} serveurs!`);
-    client.user.setPresence({ game: { name: `xcmd | sur ${client.guilds.size} serveur | by TarKyo`}})
+    client.user.setPresence({ game: { name: `_cmd | sur ${client.guilds.size} serveur | by TarKyo`}})
   
   });
 
@@ -48,4 +47,4 @@ client.on("guildCreate", guild => {
 
 });
 
-client.login(token);
+client.login(process.env.CLEF);
