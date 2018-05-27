@@ -6,10 +6,10 @@ exports.run = (client, message, args) => {
     .setDescription("Menu des commande")
     .setColor("#ffffff")
     .addField("📘 Commandes de basse", "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-    .addField(" ▶️ Nudes", "la Commande: **xnsfw** vous permet d'afficher des nudes dans un channel (attention il faut un channel en NSFW)")
-    .addField(" ▶️ Pile ou Face", "la Commmande **xflip** vous permez de jouer à **pile** ou **face** ")
-    .addField(" ▶️ Loterie", "la Commmande **xroll** est un jeu de loterie")
-    .addField(" ▶️ avatar", "la Commmande **xavatar @<player>** vous permez de voir l'avatar des utilisateur");
+    .addField(" ▶️ Nudes", "la Commande: **_nsfw** vous permet d'afficher des nudes dans un channel (attention il faut un channel en NSFW)")
+    .addField(" ▶️ Pile ou Face", "la Commmande **_flip** vous permez de jouer à **pile** ou **face** ")
+    .addField(" ▶️ Loterie", "la Commmande **_roll** est un jeu de loterie")
+    .addField(" ▶️ avatar", "la Commmande **_avatar @<player>** vous permez de voir l'avatar des utilisateur");
     
     let helpembed2 = new Discord.RichEmbed()
     .setAuthor(`📍 Un message contenant les commandes du bot vous a été envoyé !`, iconm)
