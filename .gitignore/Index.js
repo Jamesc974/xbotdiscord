@@ -5,7 +5,15 @@ var request = require("superagent");
 
 //----------------------------------------------
 var prefix = (process.env.PREFIX)
+var help = "_help"
 //----------------------------------------------
+
+client.on('guildCreate', (g) => {
+  let channels = g.channels
+  channels = channels.filter(c => c.type === "text")
+  let defaultChannel = channels.first()
+  if (defaultChannel && defaultChannel.send) defaultChannel.send(":wave::skin-tone-1: Salut! Je suis " + '`' + client.user.username + '`' + "\nLes commandes normales marche avec le prefix" + '`' + prefix + '`' + "\nJe suis un robot polyvalent qui vise à augmenter l'activité d'utilisateur sur vos serveurs de Discord.\nCommande pour afficher la liste des commandes:"+ '`' + help + '`' )
+})
 
 client.on("ready", async () => {
     console.log(`${client.user.username} est en ligne sur ${client.guilds.size} serveurs!`);
