@@ -13,6 +13,7 @@
     "fs": "0.0.1-security",
     "moment": "^2.21.0",
     "moment-duration-format": "^2.2.2",
+    "random-number": "0.0.9",
     "pornsearch": "^2.4.2",
     "random-puppy": "^1.1.0",
     "snekfetch": "^3.6.4",
