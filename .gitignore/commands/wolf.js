@@ -26,6 +26,7 @@ exports.run = async (client, message) => {
         integer: true
     });
     let image = hug[r];
+    message.delete().catch(O_o=>{});
     let embed = new Discord.RichEmbed()
     .setAuthor(`🐺 Loup / Wolf`, iconm)
     .setImage(image)
