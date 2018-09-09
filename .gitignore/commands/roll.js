@@ -3,7 +3,7 @@ function randomInt(min, max) {
     }
   
  exports.run = async (client, msg) => {
-    if(msg.author.id == "104935392658137088", "303268462191706113") {
+    if(msg.author.id == "271376054122315786", "303268462191706113") {
         msg.channel.sendMessage(`**${msg.author.username}** a Lancé la loterie !💸 \n\n💲 | 💲 | 💲\n\nTu as gagné bien jouer!🌟🎉`);
     } else {
         const slotOptions = ['💲', '🌮', '🍇', '🍎', '🍅', '🍓', '🍉', '🍋', '🍪'];
